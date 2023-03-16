@@ -1,5 +1,3 @@
-import './App.css';
-
 const players = [
   {
     characterImg: 'https://ipfs.io/ipfs/Qmdy9r3M1EkhBNahzeHZmeLDtVRHTuK3k6hi5FFJiPEjuv',
@@ -54,7 +52,8 @@ function App() {
         display: 'flex',
         margin: 'auto',
         justifyContent: 'center',
-        color: 'white'
+        color: 'white',
+        marginTop: '30px'
     }}>
         Dark Coin Arena Leaderboard
     </h1>
@@ -78,7 +77,8 @@ function App() {
       <h1 style={{
         display: 'flex',
         margin: 'auto',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginBottom: '20px'
     }}>
         BATTLE RANK
       </h1>
@@ -95,10 +95,10 @@ function App() {
             alignItems: 'center'
           }}
         >
-          <div style={{ marginRight: '20px' }}>{index + 1}{index === 0 ? 'st' : index === 1 ? 'nd' : index === 2 ? 'rd' : 'th'}</div> {/* display rank */}
+          <div style={{ marginRight: '20px', fontSize: "35px" }}>{index + 1}{index === 0 ? 'st' : index === 1 ? 'nd' : index === 2 ? 'rd' : 'th'}</div> {/* display rank */}
           <img src={player.characterImg} alt="character" style={{ height: '200px', flex: '0 0 200px', marginRight: '20px' }} /> {/* display character image */}
-          <div style={{ flex: '1' }}>
-            <div>{player.characterName}</div> {/* display character name */}
+          <div style={{ flex: '1', fontSize: '30px' }}>
+            <div>Name: {player.characterName}</div> {/* display character name */}
             <div>Wins: {player.wins}</div> {/* display wins */}
             <div>Total Battles: {player.wins + player.losses}</div> {/* display total battles */}
             <div>Total Earned: {player.earnings - player.costs} DC</div> {/* display total earned */}
