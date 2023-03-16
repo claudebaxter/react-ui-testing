@@ -72,7 +72,6 @@ function App() {
         padding: '20px',
         flexDirection: 'column',
         paddingLeft: '20px',
-        minWidth: '575.13px',
         '@media (max-width: 768px)': {
           fontSize: '16px',
           marginLeft: '2px',
