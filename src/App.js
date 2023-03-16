@@ -73,7 +73,7 @@ function App() {
         flexDirection: 'column',
         paddingLeft: '20px',
         '@media (max-width: 768px)': {
-          fontSize: '16px',
+          fontSize: '11px',
           marginLeft: '2px',
           marginRight: '2px',
           marginTop: '5px',
@@ -99,7 +99,8 @@ function App() {
             marginBottom: '10px',
             padding: '20px',
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
+            maxWidth: '90%'
           }}
         >
           <div style={{ marginRight: '20px', fontSize: "35px" }}>{index + 1}{index === 0 ? 'st' : index === 1 ? 'nd' : index === 2 ? 'rd' : 'th'}</div> {/* display rank */}
@@ -109,9 +110,9 @@ function App() {
               flex: '0 0 200px', 
               marginRight: '20px',
               '@media (max-width: 768px)': {
-                height: '100px',
-                flex: '0 0 100px',
-                marginRight: '5px'
+                height: '50px',
+                flex: '0 0 50px',
+                marginRight: '2px'
               } }} /> {/* display character image */}
           <div style={{ flex: '1', fontSize: '30px' }}>
             <div>Name: {player.characterName}</div> {/* display character name */}
