@@ -53,7 +53,9 @@ function App() {
         margin: 'auto',
         justifyContent: 'center',
         color: 'white',
-        marginTop: '30px'
+        marginTop: '30px',
+        whiteSpace: 'nowrap',
+        minWidth: '732px'
     }}>
         Dark Coin Arena Leaderboard
     </h1>
@@ -72,14 +74,7 @@ function App() {
         padding: '20px',
         flexDirection: 'column',
         paddingLeft: '20px',
-        minWidth: '550px',
-        '@media (max-width: 768px)': {
-          fontSize: '11px',
-          marginLeft: '2px',
-          marginRight: '2px',
-          marginTop: '5px',
-          padding: '3px'
-        }
+        minWidth: '550px'
       }}
     >
       <h1 style={{
@@ -109,12 +104,8 @@ function App() {
             style={{ 
               height: '200px', 
               flex: '0 0 200px', 
-              marginRight: '20px',
-              '@media (max-width: 768px)': {
-                height: '50px',
-                flex: '0 0 50px',
-                marginRight: '2px'
-              } }} /> {/* display character image */}
+              marginRight: '20px'
+            }} /> {/* display character image */}
           <div style={{ flex: '1', fontSize: '30px' }}>
             <div>Name: {player.characterName}</div> {/* display character name */}
             <div>Wins: {player.wins}</div> {/* display wins */}
