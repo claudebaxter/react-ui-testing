@@ -1,3 +1,7 @@
+import gold from './gold.svg';
+import silver from './silver.svg';
+import bronze from './bronze.svg'
+
 const players = [
   {
     characterImg: 'https://ipfs.io/ipfs/Qmdy9r3M1EkhBNahzeHZmeLDtVRHTuK3k6hi5FFJiPEjuv',
@@ -96,9 +100,43 @@ function App() {
             padding: '20px',
             display: 'flex',
             alignItems: 'center',
-            maxWidth: '90%'
+            maxWidth: '90%',
+            position: 'relative'
           }}
         >
+          {index === 0 && (
+          <img 
+            src={gold} 
+            alt="gold" 
+            style={{
+              position: 'absolute',
+              top: '-10px',
+              left: 'calc(50% - 118px)'
+            }} 
+          />
+        )} {/* display gold crown icon above the first player */}
+        {index === 1 && (
+          <img 
+            src={silver} 
+            alt="silver" 
+            style={{
+              position: 'absolute',
+              top: '-10px',
+              left: 'calc(50% - 118px)'
+            }} 
+        />
+        )} {/* display silver crown icon above the second player */}
+        {index === 2 && (
+          <img 
+            src={bronze} 
+            alt="bronze" 
+            style={{
+              position: 'absolute',
+              top: '15px',
+              left: 'calc(50% - 118px)'
+            }} 
+          />
+        )} {/* display bronze crown icon above the third player */}
           <div style={{ marginRight: '20px', fontSize: "35px" }}>{index + 1}{index === 0 ? 'st' : index === 1 ? 'nd' : index === 2 ? 'rd' : 'th'}</div> {/* display rank */}
           <img src={player.characterImg} alt="character" 
             style={{ 
