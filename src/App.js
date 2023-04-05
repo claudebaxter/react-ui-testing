@@ -9,7 +9,7 @@ function App() {
           <div style={{
             border: '5px solid rgb(255,255,255)', 
             boxShadow: '0 0 15px 5px rgba(211,211,211,.75)', 
-            margin: '100px 100px', 
+            margin: '25px', 
             borderRadius: '20px', 
             textAlign: 'center',
             color: 'white',
@@ -42,6 +42,110 @@ function App() {
                 This will be an ongoing effort until all of the users affected by the hack and following announcements are made whole.
               </p>
           </div>
+      </div>
+      <div style={{
+        display: 'flex', 
+        justifyContent: 'center'
+      }}>
+        <div style={{
+            border: '5px solid rgb(255,255,255)', 
+            boxShadow: '0 0 15px 5px rgba(211,211,211,.75)', 
+            margin: '25px', 
+            borderRadius: '20px', 
+            textAlign: 'center',
+            color: 'white',
+            padding: '20px',
+            maxWidth: '600px',
+            minWidth: '350px'}}>
+              <label style={{
+                marginBottom: '10px'
+              }}>Wallet Address:</label>
+              <input 
+              placeholder="(Required)"
+              style={{
+                margin: 'auto',
+                display: 'flex',
+                marginBottom: '15px',
+                width: '275px'
+              }}
+              required></input>
+
+              <label style={{
+                marginBottom: '10px'
+              }}>Email:</label>
+              <input 
+              type="email" 
+              placeholder="(Optional)"
+              style={{
+                margin: 'auto',
+                display: 'flex',
+                marginBottom: '15px',
+                width: '275px'
+              }}></input>
+
+              <label style={{
+                marginBottom: '10px'
+              }}>DCV1 Held (pre hack/announcement):</label>
+              <input 
+              placeholder="(Doesn't include DC bought after announcement)"
+              style={{
+                margin: 'auto',
+                display: 'flex',
+                marginBottom: '15px',
+                width: '275px'
+              }}></input> 
+
+              <label style={{
+                marginBottom: '10px'
+              }}>DCV1 Sold (if sold after hack/announcement):</label>
+              <input 
+              placeholder="(Amount of DC sold)"
+              style={{
+                margin: 'auto',
+                display: 'flex',
+                marginBottom: '15px',
+                width: '275px'
+              }}></input> 
+
+              <label style={{
+                marginBottom: '10px'
+              }}>TRX ID (for DC sold after announcement):</label>
+              <input 
+              placeholder="(TRX ID for DC Sold)"
+              style={{
+                margin: 'auto',
+                display: 'flex',
+                marginBottom: '15px',
+                width: '275px'
+              }}></input> 
+
+              <label style={{
+                marginBottom: '10px'
+              }}>Questions or concerns:</label>
+              <textarea 
+              placeholder="(To receive a response, please include email)"
+              style={{
+                margin: 'auto',
+                display: 'flex',
+                marginBottom: '15px',
+                width: '275px',
+                height: '150px'
+              }}></textarea> 
+        </div>
+      </div>
+      <div style={{
+        display: 'flex', 
+        justifyContent: 'center'
+      }}>
+        <button style={{
+          border: '1px solid white',
+          padding: '20px',
+          borderRadius: '15px',
+          backgroundColor: 'black',
+          color: 'white'
+        }}>
+          SUBMIT
+        </button>
       </div>
     </>
   );
